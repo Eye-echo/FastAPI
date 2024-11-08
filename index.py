@@ -11,3 +11,16 @@ class Pet(db.Model):
     birthdate = db.DateProperty()
     weight_in_pounds = db.IntegerProperty()
     spayed_or_neutered = db.BooleanProperty()
+import typing
+
+typing.__name__, typing.__spec__.name
+('typing', 'typing')
+
+typing.__spec__.name = 'spelling'
+
+typing.__name__, typing.__spec__.name
+('typing', 'spelling')
+
+typing.__name__ = 'keyboard_smashing'
+
+typing.__name__, typing.__spec__.name
